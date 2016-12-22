@@ -65,8 +65,26 @@ const winningTeams = (champions) => {
       return team.conference === 'Eastern';
     })
 
-    return eastChamps.length;
+    return `The Eastern conference team has won the Stanley Cup ${eastChamps.length} times since 2004.`;
 
 }
 
 console.log(winningTeams(champions));
+
+//#2: How many times did the opposite conference win the year after a given conference won? (i.e. Western conference won the year after Eastern or vice-versa)
+
+const changesOfTheGuard = (champions) => {
+  let counter = 0;
+  for (let i = 0; i < champions.length; i++) {
+    if (champions[i + 1]) {
+      if (champions[i].conference !== champions[i +1].conference) {
+        counter++;
+      }
+    }
+  }
+  return `There have been ${counter} changes of the guard in the Stanley Cup finals since 2004.`;
+}
+
+//can you figure out a cleaner way to solve the above?
+
+console.log(changesOfTheGuard(champions));
