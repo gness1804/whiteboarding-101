@@ -65,10 +65,10 @@ const winningTeams = (champions) => {
 
 console.log(winningTeams(champions));
 
-//#2: Return the subset of the array containing the longest streak of consecutive champions from the same conference
+//#2: How many times did the opposite conference win the year after a given conference won? (i.e. Western conference won the year after Eastern or vice-versa)
 
-const streak = (champions) => {
+const changesOfTheGuard = (champions) => {
 
 }
 
-console.log(streak(champions));
+console.log(changesOfTheGuard(champions));
