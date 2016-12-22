@@ -62,3 +62,13 @@ const champions = [
 const winningTeams = (champions) => {
 
 }
+
+console.log(winningTeams(champions));
+
+//#2: Return the subset of the array containing the longest streak of consecutive champions from the same conference
+
+const streak = (champions) => {
+
+}
+
+console.log(streak(champions));
