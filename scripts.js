@@ -1,4 +1,5 @@
 //whiteboarding with hockey teams!
+//below is a list of all Stanley Cup champions since the 2004-05 lockout. Do stuff with this data below! 
 
 const champions = [
   {
