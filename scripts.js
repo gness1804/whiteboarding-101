@@ -61,4 +61,12 @@ const champions = [
 // #1: Return a string stating how many NHL teams representing the Eastern Conference have won the Stanley Cup since 2006
 const winningTeams = (champions) => {
 
+  let eastChamps = champions.filter((team) => {
+      return team.conference === 'Eastern';
+    })
+
+    return eastChamps.length;
+
 }
+
+console.log(winningTeams(champions));
